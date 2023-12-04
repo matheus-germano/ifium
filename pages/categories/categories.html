@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ifium | Categorias</title>
+
+  <script type="module" src="../../scripts/authGuard.js"></script>
+  <script type="module" src="../../scripts/adminGuard.js"></script>
+
+  <script type="module" src="../../scripts/firebaseInit.js"></script>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="w-full max-w-[1200px] min-h-[calc(100vh-120px)] mx-auto flex justify-center">
+    <main class="w-full p-4">
+      <section class="flex flex-col gap-4">
+        <h2 class="font-bold text-2xl">Categorias</h2>
+        <section
+          id="add-category"
+          class="flex gap-4"
+        >
+          <input
+            id="category"
+            name="category"
+            type="text"
+            placeholder="Digite a categoria"
+
+          >
+          <button
+            id="createCategoryBtn"
+            type="button"
+            aria-label="commonBtn"
+            class="flex-1"
+          >
+            <i class="ph ph-plus"></i>
+          </button>
+        </section>
+        <ul id="categories-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="../../scripts/createNavbar.js"></script>
+  <script type="module" src="../../scripts/createFooter.js"></script>
+  <script type="module" src="../../scripts/styleInput.js"></script>
+  <script type="module" src="../../scripts/styleButton.js"></script>
+  <script type="module" src="./categories.js"></script>
+</body>
+</html>

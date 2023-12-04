@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ifium | Entre</title>
+
+  <script type="module" src="../../scripts/firebaseInit.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="../../scripts/styleInput.js"></script>
+  <script src="../../scripts/styleButton.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class='w-[100vw] h-[100vh] bg-nt-inspect-gray-600 flex flex-col items-center justify-center gap-8'>
+    <img
+      src="../../assets/if-logo.png"
+      alt="IF logo"
+      width="64px"
+    />
+    <h1 class="text-5xl font-black">IFIUM</h1>
+    <form 
+      class='w-full max-w-[350px] flex flex-col items-center justify-center gap-4'
+    >
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Digite seu e-mail"
+      >
+      <input
+        id="password"
+        name="password"
+        type="password"
+        placeholder="Digite sua senha"
+      >
+      <button
+        type="button"
+        id="signInBtn"
+        aria-label="commonBtn"
+      >
+        Entrar
+      </button>
+      <button
+        type="button"
+        id="signInWithGoogleBtn"
+        aria-label="googleBtn"
+      >
+        Entrar com o Google
+      </button>
+    </form>
+  </main>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="./signIn.js"></script>
+</body>
+</html>
