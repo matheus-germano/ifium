@@ -4,7 +4,7 @@ function createPostCard(post) {
   const { id, title, content, categoryName, createdAt, authorName } = post;
 
   const userFavorites = storage.get("favorites"); 
-  const isFavorited = !!userFavorites.find(f => f.postId === id) ? (
+  const isFavorited = userFavorites && userFavorites.length > 0 && !!userFavorites.find(f => f.postId === id) ? (
     `<i class="ph-fill ph-heart text-xl"></i>`
   ) : `<i class="ph ph-heart text-xl"></i>`;
 
